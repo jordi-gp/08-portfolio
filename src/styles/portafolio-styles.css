@@ -1,0 +1,53 @@
+.proyectos {
+    border: 1px solid red;
+}
+
+#proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.proyectos-info {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+.proyectos-info p {
+    font-size: 18px;
+}
+
+.tarjetas-proyectos {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 50px;
+    margin-top: 20px !important;
+}
+
+.card {
+    width: 15%;
+    margin: 25px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1085px) {
+    .tarjetas-proyectos > div, .proyectos-info {
+        width: 80%;
+    }
+
+    .tarjetas-proyectos {
+        margin-top: 10px
+    }
+}
