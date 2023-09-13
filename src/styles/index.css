@@ -110,3 +110,53 @@ nav ul {
   margin-bottom: 0;
 }
 /*#endregion*/
+
+/*#region ESTILOS VERSION MOVIL*/
+@media(max-width: 1250px) {
+  .logo > h2 {
+    text-align: left;
+    padding-top: 10px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  /*Cuando el usuario active el menú se activan estos estilos*/
+  nav > ul {
+    height: auto;
+    display: block;
+    padding: 15px;
+  }
+
+  /*Estilos para la animación del menú*/
+  /* .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  } */
+
+  
+}
+/*#endregion*/
