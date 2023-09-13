@@ -6,16 +6,16 @@ export const Contacto = () => {
         <div className='formulario-contacto'>
             <form action='#' method='post' className='sub-form'>
                 <div className='form-components' >
-                    <label for='name'>Nombre</label>
+                    <label htmlFor='name'>Nombre</label>
                     <input type='text' name='name'></input>
                     
-                    <label for='lastname'>Apellido</label>
+                    <label htmlFor='lastname'>Apellido</label>
                     <input type='text' name='lastname'></input>
                     
-                    <label for='email'>Correo Electrónico</label>
+                    <label htmlFor='email'>Correo Electrónico</label>
                     <input type='email' name='email'></input>
                     
-                    <label for='mensaje'>Mensaje</label>
+                    <label htmlFor='mensaje'>Mensaje</label>
                     <textarea name='mensaje'></textarea>
 
                     <div className='btn'>

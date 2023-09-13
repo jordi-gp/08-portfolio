@@ -36,6 +36,11 @@
   padding-top: 20px;
   margin-right: auto;
 }
+
+.form-components > input:focus , textarea:focus {
+  background: white;
+  border: 1px solid grey;
+}
 /*#endregion*/
 
 /*#region BOTÓN DE ENVÍO*/
@@ -58,5 +63,17 @@
 
 .formulario-contacto textarea {
   resize: vertical;
+}
+/*#endregion*/
+
+/*#region ESTILOS EN VERSIÓN MÓVIL*/
+@media(max-width: 1250px) {
+  .form-components {
+    width: 325px;
+  }
+
+  .form-components > label {
+    padding-left: 50px;
+  }
 }
 /*#endregion*/
