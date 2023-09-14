@@ -53,7 +53,7 @@ nav ul {
 .header li {
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 18px;
+  font-size: 22px;
   transform: 300ms;
 }
 
@@ -111,8 +111,12 @@ nav ul {
 }
 /*#endregion*/
 
-/*#region ESTILOS VERSION MOVIL*/
+/*#region ESTILOS VERSIÓN MÓVIL*/
 @media(max-width: 1250px) {
+  .active-link {
+    border-bottom: 0 !important;
+  }
+
   .logo > h2 {
     text-align: left;
     padding-top: 10px;
@@ -156,7 +160,6 @@ nav ul {
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
   } */
-
   
 }
 /*#endregion*/
