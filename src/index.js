@@ -1,5 +1,5 @@
 import React from 'react';
-import { CreateRoot, createRoot } from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles/index.css';
 import App from './App';

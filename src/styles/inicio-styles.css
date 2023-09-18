@@ -1,0 +1,152 @@
+/*#region APARTADO SUPERIOR*/
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripcion-inicio {
+    width: 60%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center; 
+    font-size: 20px;   
+}
+
+.info-personal {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: lightgray;
+}
+
+.info-personal > h3 {
+    padding-bottom: 25px;
+}
+/*#endregion*/
+
+/*#region APARTADO PROYECTOS*/
+#inicio , #call-to-action {
+    background: rgb(245, 245, 245);
+}
+
+.tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    width: 85%;
+    background: linear-gradient(90deg, rgba(87,97,42,1) 0%, rgba(215,120,17,1) 0%, rgba(255,222,0,1) 100%);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.tarjeta-info {
+    border: 1px solid black;
+    padding: 50px;
+    height: auto;
+    border-radius: 10px;
+    background: white;
+    transition: all 300ms;
+}
+
+.tarjeta-info:hover {
+    background: rgb(92, 189, 73);
+    margin-bottom: 15px;
+}
+
+.tarjeta-info:hover > a  {
+    color: white;
+}
+
+.tarjeta-info > a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*#endregion*/
+
+/*#region CALL TO ACTION*/
+.call-to-action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+
+#action-content {
+    border: 1px solid black;
+    width: 65%;
+    text-align: center;
+    font-size: 20px;
+    padding: 25px;
+    background: lightgray;
+    border-radius: 10px;
+}
+
+#action-content > a > button {
+    background: white;
+}
+
+#action-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-button {
+    margin: 25px;
+    width: 250px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.action-button:hover {
+    background: rgb(92, 189, 73);
+}
+/*#endregion*/
+
+/*#region ESTILOS VERSIÓN MÓVIL*/
+@media(max-width: 1250px) {
+    .descripcion {
+        width: 90%;
+    }
+
+    .info-personal > h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        border: 1px solid blue;
+        width: 85%;
+    }
+
+    .tarjeta-info {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .call-to-action {
+        height: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #action-content {
+        width: 90%;
+    }
+
+    #action-buttons {
+        flex-direction: column;
+    }
+}
+/*#endregion*/

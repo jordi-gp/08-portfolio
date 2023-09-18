@@ -62,7 +62,8 @@
     }
 
     .tarjetas-proyectos {
-        margin-top: 10px
+        margin-top: 10px;
+        width: 90%;
     }
 }
 /*#endregion*/

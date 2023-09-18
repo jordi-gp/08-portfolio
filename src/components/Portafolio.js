@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
 import '../styles/portafolio-styles.css';
 import { trabajos } from '../data/trabajos';
 
 export const Portafolio = () => {
-    console.log(trabajos);
-
     return (
         <div className='contenedor' id='proyectos'>
             <div className='proyectos-info'>
