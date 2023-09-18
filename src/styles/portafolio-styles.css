@@ -1,5 +1,5 @@
-.proyectos {
-    border: 1px solid red;
+#proyectos {
+    height: auto;
 }
 
 #proyectos {
@@ -18,7 +18,7 @@
 }
 
 .proyectos-info p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .tarjetas-proyectos {
@@ -33,7 +33,7 @@
 }
 
 .card {
-    width: 15%;
+    width: 400px;
     margin: 25px;
 }
 
@@ -42,8 +42,21 @@
     height: auto;
 }
 
+.card-body > .enlace-github {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.enlace-github > button {
+    width: auto;
+}
+
 /*#region ESTILOS EN VERSIÓN MÓVIL*/
 @media (max-width: 1085px) {
+    #proyectos {
+        height: auto;
+    }
+
     .tarjetas-proyectos > div, .proyectos-info {
         width: 80%;
     }

@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/portafolio-styles.css';
+import { trabajos } from '../data/trabajos';
 
 export const Portafolio = () => {
-    const [proyecto, setProyecto] = useState();
-
-    const proyectoObj = {
-        id: 0,
-        nombre: '',
-        descripcion: '',
-        enlaceGit: ''
-    }
+    console.log(trabajos);
 
     return (
         <div className='contenedor' id='proyectos'>
@@ -22,49 +16,36 @@ export const Portafolio = () => {
                 </p>
             </div>
             <div className='tarjetas-proyectos'>
-                <div className="card">
-                    <img src="assets/githublogo.jpg" class="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5>Nombre</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" className="btn btn-primary">Ver código</button>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src="assets/githublogo.jpg" class="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" className="btn btn-primary">Ver código</button>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src="assets/githublogo.jpg" class="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" className="btn btn-primary">Ver código</button>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src="assets/githublogo.jpg" class="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" className="btn btn-primary">Ver código</button>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src="assets/githublogo.jpg" class="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" className="btn btn-primary">Ver código</button>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src="assets/githublogo.jpg" class="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" className="btn btn-primary">Ver código</button>
-                    </div>
-                </div>
+                {
+                    trabajos.map(trabajo => {
+                        return (
+                            <div className="card" key={trabajo.id}>
+                                <img src="assets/githublogo.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <h5>{trabajo.nombre}</h5>
+                                    <p className="card-text">{trabajo.descripcion}</p>
+                                    <p>Tecnologías Utilizadas:</p>
+                                    <ul>
+                                        {
+                                            trabajo.tecnologias.map(tecnologia => {
+                                                return (
+                                                    <li key={tecnologia}>
+                                                        {tecnologia}
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                    <a className='enlace-github' target='_blank' href={trabajo.githubUrl}>
+                                        <button type="button" className="btn btn-primary">
+                                            Ver código
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
             </div>
         </div>
     )
