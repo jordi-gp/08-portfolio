@@ -5,10 +5,10 @@ export const HeaderNav = () => {
     const menuInput = useRef();
     const menuContent = useRef();
 
+    //Animación del menú en versión móvil
     const changeMenu = () => {
         const divClass = menuInput.current.className;
 
-        //Animación del menú
         if(divClass === 'container') {
             menuInput.current.classList.add('change');
             menuContent.current.classList.remove('menu-content-hidden');
