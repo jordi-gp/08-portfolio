@@ -9,10 +9,10 @@ export const HeaderNav = () => {
         const divClass = menuInput.current.className;
 
         //Animación del menú
-        if(divClass == 'container') {
+        if(divClass === 'container') {
             menuInput.current.classList.add('change');
             menuContent.current.classList.remove('menu-content-hidden');
-        } else if(divClass == 'container change') {
+        } else if(divClass === 'container change') {
             menuInput.current.classList.remove('change');
             menuContent.current.classList.add('menu-content-hidden');
         }
