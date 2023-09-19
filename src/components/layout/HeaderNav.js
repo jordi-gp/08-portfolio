@@ -28,7 +28,7 @@ export const HeaderNav = () => {
                 <div className="bar2"></div>
                 <div className="bar3"></div>
             </div> 
-            <nav ref={menuContent} className='menu-content'>
+            <nav ref={menuContent} className='menu-content-hidden'>
                 <ul>
                     <li>
                         <NavLink to='/inicio' className={({isActive}) => isActive ? 'active-link' : ''}>Inicio</NavLink>
